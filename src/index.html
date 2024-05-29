@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Guess the number game</title>
+  </head>
+  <body class="overflow-y-hidden overflow-x-hidden">
+    <section id="section" class="bg-gray-700 min-h-screen py-10">
+      <header class="container mx-auto max-w-6xl space-y-36 px-20">
+        <div class="flex items-center justify-between">
+          <button
+            id="restart"
+            class="btn px-8 text-2xl uppercase rounded-lg p-2 bg-black text-white"
+          >
+            Again
+          </button>
+          <p class="text-white uppercase">Between 1 and 20</p>
+        </div>
+        <div
+          class="container mx-auto flex flex-col items-center justify-center"
+        >
+          <h1 class="text-white text-4xl uppercase">Guess My Number</h1>
+          <div
+            id="secretNum"
+            class="mt-10 text-white text-3xl bg-black w-24 h-24 text-center pt-8"
+          >
+            ?
+          </div>
+        </div>
+      </header>
+
+      <main
+        class="mt-24 flex flex-col items-center md:flex-row md:justify-between container px-20 mx-auto max-w-6xl space-y-12"
+      >
+        <section class="left flex flex-col items-center space-y-4">
+          <input
+            type="number"
+            name=""
+            id="userNum"
+            maxlength="4"
+            class="w-24 placeholder:text-center p-4 border-2 border-white outline-none overflow-hidden bg-transparent text-white"
+          />
+          <button
+            class="btn check px-8 text-2xl uppercase rounded-lg p-2 bg-black text-white"
+          >
+            Check
+          </button>
+        </section>
+
+        <section class="right text-white space-y-4 uppercase">
+          <p class="text-2xl message tracking-widest">start guessing...</p>
+          <p class="text-2xl tracking-widest">
+            Score: <span class="score">0</span>
+          </p>
+          <p class="text-2xl tracking-widest">
+            HighScore: <span class="highscore">0</span>
+          </p>
+        </section>
+      </main>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-change {
+  @apply bg-green-500;
+}
+.over {
+  @apply bg-red-600;
+}
